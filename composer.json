@@ -1,0 +1,16 @@
+{
+    "name": "hexlet/code",
+    "description": "Mind Games is a set of five console games built on the principle of popular mobile applications for brain training. Each game asks questions that must be answered correctly. After three correct answers, the game is considered completed. Wrong answers end the game and prompt you to play it again.",
+    "autoload": {
+        "psr-4": {
+            "Hexlet\\Code\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Sergey Danilov",
+            "email": "danilovserg1985s@gmail.com"
+        }
+    ],
+    "require": {}
+}
