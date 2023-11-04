@@ -7,6 +7,6 @@ validate:
 	composer validate
 lint:
 	composer exec --verbose phpcs -- --standard=PSR12 src bin
-brain-even: #launching the game brain-even
+brain-even:
 	./bin/brain-even
 	
