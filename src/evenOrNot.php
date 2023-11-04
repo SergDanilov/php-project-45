@@ -34,7 +34,7 @@ for ($i = 0; $i < 3;) {
     if ($answer === $correctAnswer) {
         line("Correct!");
         $i++;
-        $win += 1;
+        $win++;
     } else {
         line("'{$answer}' is wrong answer ;(.");
         line("Correct answer was '{$correctAnswer}'.");
