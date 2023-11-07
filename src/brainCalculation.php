@@ -4,6 +4,8 @@
  * php version 8.1.24
  *
  * This allows greeting with User and know his name.
+ * Then calculation random expression and asking user answer. 
+ * After that comparing user's answer with correct answer. 
  *
  * @category  LearnProject
  * @package   Phpproject
@@ -17,7 +19,7 @@ namespace Hexlet\Code\brainCalculation;
 use function cli\line;
 use function cli\prompt;
 
-line("Welcome to the Brain Game!");
+line("Welcome to the Brain Games!");
 $name = prompt("May I have your name?");
 line("Hello, %s!", $name);
 line("Answer 'yes' if the number is even, otherwise answer 'no'.");
