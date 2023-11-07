@@ -1,5 +1,9 @@
 #!/usr/bin/env php
-<?php #Проверка числа на четность
+<?php 
+/*
+Вычисление случайного выражения из двух операндов 
+и одного из следущих операторов: "+", "-", "*".
+*/
 
 use  Hexlet\Code\evenOrNot;
 
@@ -10,6 +14,6 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-$evenGamePath = __DIR__ . '/../src/evenOrNot.php';
+$evenGamePath = __DIR__ . '/../src/brainCalculation.php';
 require_once $evenGamePath;
 ?>
