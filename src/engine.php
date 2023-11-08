@@ -4,24 +4,24 @@
  * php version 8.1.24
  *
  * This allows greeting with User and know his name.
+ * Then calculation random expression and asking user answer. 
+ * After that comparing user's answer with correct answer. 
  *
  * @category  LearnProject
  * @package   Phpproject
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
  * @copyright 2023 Sergey Danilov
  * @license   no Licence
- * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/evenOrNot.php
+ * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/brainCalculation.php.php
  */
-namespace Hexlet\Code\evenOrNot;
+namespace Hexlet\Code\brainCalculation;
 
 use function cli\line;
 use function cli\prompt;
 
-//greeting part
-line("Welcome to the Brain Game!");
+line("Welcome to the Brain Games!");
 $name = prompt("May I have your name?");
 line("Hello, %s!", $name);
-//----------------
 line("Answer 'yes' if the number is even, otherwise answer 'no'.");
 $win = 0;
 for ($i = 0; $i < 3;) {
@@ -33,7 +33,6 @@ for ($i = 0; $i < 3;) {
     } else {
         $correctAnswer = "no";
     }
-    //engine part
     if ($answer === $correctAnswer) {
         line("Correct!");
         $i++;
@@ -44,7 +43,6 @@ for ($i = 0; $i < 3;) {
         line("Let's try again, " . $name . "!");
         break;
     }
-    //--------------
 }
 if ($win == 3) {
     line("Congratulations {$name}!");
