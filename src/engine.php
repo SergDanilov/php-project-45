@@ -14,14 +14,17 @@
  */
 namespace Hexlet\Code\engine;
 
+use function cli\line;
+use function cli\prompt;
+
 if ($answer === $correctAnswer) {
     line("Correct!");
     $i++;
     $win++;
 } else {
-        line("'{$answer}' is wrong answer ;(.");
-        line("Correct answer was '{$correctAnswer}'.");
-        line("Let's try again, " . $name . "!");
-        break;
+    line("'{$answer}' is wrong answer ;(.");
+    line("Correct answer was '{$correctAnswer}'.");
+    line("Let's try again, " . $name . "!");
+        // break;
 }
 
