@@ -14,13 +14,22 @@
  */
 namespace Hexlet\Code\evenOrNot;
 
+use Hexlet\Code\engine;
+use Hexlet\Code\greeting;
+
 use function cli\line;
 use function cli\prompt;
 
+$greeting_part = __DIR__ . '/../src/greeting.php';
+$engine_part = __DIR__ . '/../src/engine.php';
+
 //greeting part
+require_once $greeting_part;
+/*
 line("Welcome to the Brain Game!");
 $name = prompt("May I have your name?");
 line("Hello, %s!", $name);
+*/
 //----------------
 line("Answer 'yes' if the number is even, otherwise answer 'no'.");
 $win = 0;
@@ -34,6 +43,7 @@ for ($i = 0; $i < 3;) {
         $correctAnswer = "no";
     }
     //engine part
+    /*
     if ($answer === $correctAnswer) {
         line("Correct!");
         $i++;
@@ -44,7 +54,9 @@ for ($i = 0; $i < 3;) {
         line("Let's try again, " . $name . "!");
         break;
     }
+    */
     //--------------
+    require_once $engine_part;
 }
 if ($win == 3) {
     line("Congratulations {$name}!");
