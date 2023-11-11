@@ -14,17 +14,23 @@
  */
 namespace Hexlet\Code\engine;
 
+use Hexlet\Code\evenOrNot;
+
 use function cli\line;
 use function cli\prompt;
+
+$backToGame = $homePath;
 
 if ($answer === $correctAnswer) {
     line("Correct!");
     $i++;
     $win++;
+    require_once $backToGame;
 } else {
     line("'{$answer}' is wrong answer ;(.");
     line("Correct answer was '{$correctAnswer}'.");
     line("Let's try again, " . $name . "!");
-        // break;
+    $gameOver = true;
+    require_once $backToGame;
 }
 
