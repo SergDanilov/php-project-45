@@ -1,9 +1,8 @@
 <?php
 /**
- * Greeting and getting to know the game user
+ * Game allows user to check random number, if it even or no. 
  * php version 8.1.24
  *
- * This allows greeting with User and know his name.
  *
  * @category  LearnProject
  * @package   Phpproject
