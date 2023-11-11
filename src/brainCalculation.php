@@ -5,7 +5,6 @@
  * After that comparing user's answer with correct answer.
  * php version 8.1.24
  * 
- *
  * @category  LearnProject
  * @package   Phpproject
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
@@ -36,7 +35,7 @@ line("What is the result of the expression?");
 $win = 0;
 $gameOver = false;
 for ($i = 0; $i < 3;) {
-    
+
     $numberOne = rand(0, 100);
     $numberTwo = rand(0, 25);
 
@@ -45,19 +44,18 @@ for ($i = 0; $i < 3;) {
     $operator = $operatorArray[$indexRandom];
     switch ($operator) {
         case "+":
-            $correctAnswer = $numberOne + $numberTwo;
+        $correctAnswer = $numberOne + $numberTwo;
             break;
         case "-":
-            $correctAnswer = $numberOne - $numberTwo;
+        $correctAnswer = $numberOne - $numberTwo;
             break;
         case "*":
-            $correctAnswer = $numberOne * $numberTwo;
+        $correctAnswer = $numberOne * $numberTwo;
             break;
     }
     
     line("Question: {$numberOne} {$operator} {$numberTwo}");
     $answer = (int)prompt("Your answer");
-    var_dump($answer);
 
     require $engine_part;
     if ($gameOver) {
