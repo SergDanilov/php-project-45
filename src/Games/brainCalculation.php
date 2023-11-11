@@ -12,7 +12,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/brainCalculation.php.php
  */
-namespace Hexlet\Code\brainCalculation;
+namespace Hexlet\Code\Games\brainCalculation;
 
 use Hexlet\Code\greeting;
 use Hexlet\Code\engine;
@@ -20,9 +20,9 @@ use Hexlet\Code\engine;
 use function cli\line;
 use function cli\prompt;
 
-$greeting_part = __DIR__ . '/../src/greeting.php';
-$engine_part = __DIR__ . '/../src/engine.php';
-$homePath = __DIR__ . '/../src/brainCalculation.php';
+$greeting_part = __DIR__ . '/../../src/greeting.php';
+$engine_part = __DIR__ . '/../../src/engine.php';
+$homePath = __DIR__ . '/../../src/Games/brainCalculation.php';
 
 global $gameOver;
 global $homePath;

@@ -14,7 +14,7 @@
  */
 namespace Hexlet\Code\engine;
 
-use Hexlet\Code\evenOrNot;
+use Hexlet\Code\Games\evenOrNot;
 
 use function cli\line;
 use function cli\prompt;

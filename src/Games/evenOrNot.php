@@ -10,7 +10,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/evenOrNot.php
  */
-namespace Hexlet\Code\evenOrNot;
+namespace Hexlet\Code\Games\evenOrNot;
 
 use Hexlet\Code\engine;
 use Hexlet\Code\greeting;
@@ -19,9 +19,9 @@ use function cli\line;
 use function cli\prompt;
 
 
-$greeting_part = __DIR__ . '/../src/greeting.php';
-$engine_part = __DIR__ . '/../src/engine.php';
-$homePath = __DIR__ . '/../src/evenOrNot.php';
+$greeting_part = __DIR__ . '/../../src/greeting.php';
+$engine_part = __DIR__ . '/../../src/engine.php';
+$homePath = __DIR__ . '/../../src/Games/evenOrNot.php';
 
 global $gameOver;
 global $homePath;
