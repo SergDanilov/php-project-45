@@ -42,17 +42,17 @@ for ($i = 0; $i < 3;) {
     $operatorArray = ["+","-","*"];
     $indexRandom = rand(0, 2);
     $operator = $operatorArray[$indexRandom];
-    switch ($operator) {
-        case "+":
+switch ($operator) {
+    case "+":
         $correctAnswer = $numberOne + $numberTwo;
-            break;
-        case "-":
+        break;
+    case "-":
         $correctAnswer = $numberOne - $numberTwo;
-            break;
-        case "*":
+        break;
+    case "*":
         $correctAnswer = $numberOne * $numberTwo;
-            break;
-    }
+        break;
+}
     
     line("Question: {$numberOne} {$operator} {$numberTwo}");
     $answer = (int)prompt("Your answer");
