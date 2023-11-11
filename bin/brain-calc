@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php 
 /*
-Вычисление случайного выражения из двух операндов 
-и одного из следущих операторов: "+", "-", "*".
+Computing expression from two randoms operands (numbers)
+and one of the following operators: "+", "-", "*".
 */
 
 use  Hexlet\Code\brainCalculation;
