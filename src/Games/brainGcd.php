@@ -39,23 +39,35 @@ for ($i = 0; $i < 3;) {
     $numberOne = rand(1, 50);
     $numberTwo = rand(1, 50);
 
-    $operatorArray = ["+","-","*"];
-    $indexRandom = rand(0, 2);
-    $operator = $operatorArray[$indexRandom];
-    switch ($operator) {
-    case "+":
-        $correctAnswer = $numberOne + $numberTwo;
-        break;
-    case "-":
-        $correctAnswer = $numberOne - $numberTwo;
-        break;
-    case "*":
-        $correctAnswer = $numberOne * $numberTwo;
-        break;
+    $min = min($numberOne, $numberTwo);
+    $arrDivisor = [];
+
+    for($j = 1; $j <= $min; $j++) {
+        if(($numberOne % $j === 0) && ($numberTwo % $j ===0)) {
+            $arrDivisor[$j] = $j;
+        }
     }
     
-    line("Question: {$numberOne} {$operator} {$numberTwo}");
-    $answer = (int)prompt("Your answer");
+    $correctAnswer = max($arrDivisor);
+    
+    line("Question: {$numberOne} {$numberTwo}");
+    $answer = prompt("Your answer");
+    
+    $type = gettype($answer);
+    var_dump($type);
+    switch ($type) {
+        case "string":
+            $answer = $answer;
+            break;
+        case "integer":
+            $answer = (int)$answer;
+            break;
+        default:
+            $answer = $answer;
+            break;
+    }
+
+   
 
     include $engine_part;
     if ($gameOver) {
