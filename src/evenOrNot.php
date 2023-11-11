@@ -42,7 +42,7 @@ for ($i = 0; $i < 3;) {
     } else {
         $correctAnswer = "no";
     }
-    require $engine_part;
+    include $engine_part;
     if ($gameOver) {
         break;
     }

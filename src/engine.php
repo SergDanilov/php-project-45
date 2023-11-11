@@ -25,12 +25,12 @@ if ($answer === $correctAnswer) {
     line("Correct!");
     $i++;
     $win++;
-    require_once $backToGame;
+    include_once $backToGame;
 } else {
     line("'{$answer}' is wrong answer ;(.");
     line("Correct answer was '{$correctAnswer}'.");
     line("Let's try again, " . $name . "!");
     $gameOver = true;
-    require_once $backToGame;
+    include_once $backToGame;
 }
 
