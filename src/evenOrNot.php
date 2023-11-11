@@ -3,7 +3,6 @@
  * Game allows user to check random number, if it even or no. 
  * php version 8.1.24
  *
- *
  * @category  LearnProject
  * @package   Phpproject
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
