@@ -20,19 +20,21 @@ use Hexlet\Code\greeting;
 use function cli\line;
 use function cli\prompt;
 
+
 $greeting_part = __DIR__ . '/../src/greeting.php';
 $engine_part = __DIR__ . '/../src/engine.php';
+$homePath = __DIR__ . '/../src/evenOrNot.php';
+
+global $gameOver;
+global $homePath;
 
 //greeting part
 require_once $greeting_part;
-/*
-line("Welcome to the Brain Game!");
-$name = prompt("May I have your name?");
-line("Hello, %s!", $name);
-*/
-//----------------
+
+//main part game
 line("Answer 'yes' if the number is even, otherwise answer 'no'.");
 $win = 0;
+$gameOver = false;
 for ($i = 0; $i < 3;) {
     $number = rand(1, 1000);
     line('Question: ' . $number);
@@ -42,22 +44,12 @@ for ($i = 0; $i < 3;) {
     } else {
         $correctAnswer = "no";
     }
-    //engine part
-    /*
-    if ($answer === $correctAnswer) {
-        line("Correct!");
-        $i++;
-        $win++;
-    } else {
-        line("'{$answer}' is wrong answer ;(.");
-        line("Correct answer was '{$correctAnswer}'.");
-        line("Let's try again, " . $name . "!");
+    require $engine_part;
+    if ($gameOver) {
         break;
     }
-    */
-    //--------------
-    require_once $engine_part;
 }
+//winner
 if ($win == 3) {
-    line("Congratulations {$name}!");
+    line("Congratulations, {$name}!");
 }
