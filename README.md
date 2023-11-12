@@ -9,4 +9,6 @@ https://asciinema.org/a/Pez3oOIWW7bMGp72YNZviF2X7
 ### Asciinema link for brain-calc game
 https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A
 
+### Asciinema link for brain-gcd game
+https://asciinema.org/a/620512
 
