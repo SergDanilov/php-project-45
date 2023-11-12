@@ -23,7 +23,7 @@ use function cli\prompt;
 
 $backToGame = $homePath;
 
-if ($answer === $correctAnswer) {
+if ($answer == $correctAnswer) {
     line("Correct!");
     $i++;
     $win++;

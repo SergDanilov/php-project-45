@@ -55,7 +55,7 @@ for ($i = 0; $i < 3;) {
     }
     
     line("Question: {$numberOne} {$operator} {$numberTwo}");
-    $answer = (int)prompt("Your answer");
+    $answer = prompt("Your answer");
 
     include $engine_part;
     if ($gameOver) {

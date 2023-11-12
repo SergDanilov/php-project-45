@@ -53,22 +53,6 @@ for ($i = 0; $i < 3;) {
     line("Question: {$numberOne} {$numberTwo}");
     $answer = prompt("Your answer");
     
-    $type = gettype($answer);
-    var_dump($type);
-    switch ($type) {
-        case "string":
-            $answer = $answer;
-            break;
-        case "integer":
-            $answer = (int)$answer;
-            break;
-        default:
-            $answer = $answer;
-            break;
-    }
-
-   
-
     include $engine_part;
     if ($gameOver) {
         break;
