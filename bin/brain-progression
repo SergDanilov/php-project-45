@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php 
+/*
+Activate the game brain-progression in the brainProgression file.
+The games goal is answer what part of arithmetic progression was missed. 
+*/
+
+use  Hexlet\Code\Games\brainProgression;
+
+$autoloadPath1 = __DIR__ . '/../../../autoload.php';
+$autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
+if (file_exists($autoloadPath1)) {
+    require_once $autoloadPath1;
+} else {
+    require_once $autoloadPath2;
+}
+$evenGamePath = __DIR__ . '/../src/Games/brainProgression.php';
+require_once $evenGamePath;
+?>
