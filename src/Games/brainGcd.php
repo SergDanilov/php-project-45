@@ -44,7 +44,11 @@ for ($i = 0; $i < 3;) {
     $arrDivisor = [];
 
     for ($j = 1; $j <= $min; $j++) {
+<<<<<<< HEAD
         if (($numberOne % $j === 0) && ($numberTwo % $j ===0)) {
+=======
+        if(($numberOne % $j === 0) && ($numberTwo % $j ===0)) {
+>>>>>>> 49c6e7764cb64cb5b671e4cbe3244945c85a0830
             $arrDivisor[$j] = $j;
         }
     }
