@@ -41,11 +41,11 @@ for ($i = 0; $i < 3;) {
     $missedIndex = rand(4, 9);
     $arrProgression = [];
 
-    for($j = $startProgression, $k = $count; $k < 10; $j = $j + $step) {
+    for ($j = $startProgression, $k = $count; $k < 10; $j = $j + $step) {
             $arrProgression[$k] = $j;
             $k = $k + 1;
     }
-    
+
     $correctAnswer = $arrProgression[$missedIndex];
     $arrProgression[$missedIndex] = "..";
     $progression = implode(" ", $arrProgression);
