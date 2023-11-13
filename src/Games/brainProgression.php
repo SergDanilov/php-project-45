@@ -37,16 +37,18 @@ for ($i = 0; $i < 3;) {
 
     $startProgression = rand(0, 50);
     $step = rand(1, 10);
-    $lenghtProgression = rand(5, 10);
-
+    $count = rand(0, 4);
+    $missedIndex = rand(4, 9);
     $arrProgression = [];
 
-    for($j = $startProgression; $j < $lenghtProgression; $j = $j + $step) {
-            $arrProgression[$j] = $j;
+    for($j = $startProgression, $k = $count; $k < 10; $j = $j + $step) {
+            $arrProgression[$k] = $j;
+            $k = $k + 1;
     }
     
+    $correctAnswer = $arrProgression[$missedIndex];
+    $arrProgression[$missedIndex] = "..";
     $progression = implode(" ", $arrProgression);
-    $correctAnswer = max($progression);
     
     line("Question: {$progression}");
     $answer = prompt("Your answer");
