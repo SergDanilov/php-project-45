@@ -42,7 +42,7 @@ for ($i = 0; $i < 3;) {
     $min = min($numberOne, $numberTwo);
     $arrDivisor = [];
 
-    for($j = 1; $j <= $min; $j++) {
+    for ($j = 1; $j <= $min; $j++) {
         if(($numberOne % $j === 0) && ($numberTwo % $j ===0)) {
             $arrDivisor[$j] = $j;
         }
