@@ -27,6 +27,7 @@ $homePath = __DIR__ . '/../../src/Games/brainGcd.php';
 global $gameOver;
 global $homePath;
 
+
 //greeting part
 require_once $greeting_part;
 
