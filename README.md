@@ -12,3 +12,6 @@ https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A
 ### Asciinema link for brain-gcd game
 https://asciinema.org/a/620512
 
+### Asciinema link for brain-progression game
+https://asciinema.org/a/620751
+
