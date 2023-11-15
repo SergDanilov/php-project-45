@@ -21,7 +21,7 @@ use function cli\prompt;
 
 $greeting_part = __DIR__ . '/../../src/greeting.php';
 $engine_part = __DIR__ . '/../../src/engine.php';
-$homePath = __DIR__ . '/../../src/Games/brainePrime.php';
+$homePath = __DIR__ . '/../../src/Games/brainPrime.php';
 
 global $gameOver;
 global $homePath;
