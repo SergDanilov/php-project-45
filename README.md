@@ -8,7 +8,7 @@
 <li>Brain-prime. Definition of a prime number.</li>
 </ul>
 
-## [List Asciinema links for games](https://asciinema.org/~SergeyDani85)
+## [List of asciinema links for games](https://asciinema.org/~SergeyDani85)
 <ul>
 <li>
 
@@ -29,9 +29,10 @@
 </li>
 <li>
 
-### [Asciinema link for brain-progression game](https://asciinema.org/a/621071)
+### [Asciinema link for brain-prime game](https://asciinema.org/a/621071)
 </li>
 </ul>
+
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SergDanilov/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SergDanilov/php-project-45/actions)
