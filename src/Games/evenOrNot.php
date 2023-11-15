@@ -30,14 +30,14 @@ global $homePath;
 require_once $greeting_part;
 
 //main part game
-line("Answer 'yes' if the number is even, otherwise answer 'no'.");
+line('Answer \'yes\' if the number is even, otherwise answer \'no\'.');
 $win = 0;
 $gameOver = false;
 for ($i = 0; $i < 3;) {
     $number = rand(1, 1000);
     line('Question: ' . $number);
     $answer = prompt("Your answer");
-    ($number % 2 === 0)? $correctAnswer = "yes" : $correctAnswer = "no";
+    ($number % 2 === 0)? $correctAnswer = 'yes' : $correctAnswer = 'no';
 
     include $engine_part;
     // game over
