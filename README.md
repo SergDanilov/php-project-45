@@ -1,4 +1,10 @@
 # [BRAIN GAMES](https://github.com/SergDanilov/php-project-45/blob/main/README.md)
+
+### Hexlet tests and linter status:
+[![Actions Status](https://github.com/SergDanilov/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SergDanilov/php-project-45/actions)
+### Maintainability Badge
+[![Maintainability](https://api.codeclimate.com/v1/badges/2c0c47005d943b508b0a/maintainability)](https://codeclimate.com/github/SergDanilov/php-project-45/maintainability)
+
 <p><b>“Brain Games”</b> is a set of five console games built on the principle of popular mobile applications for brain training. Each game asks questions that would be answered correctly. After three correct answers, the game is considered completed. Wrong answers end the game and prompt you to play it again. Included games:</p>
 <ul>
 <li>Brain-even. Definition of an even number.</li>
@@ -32,10 +38,4 @@
 ### [Asciinema link for brain-prime game](https://asciinema.org/a/621071)
 </li>
 </ul>
-
-
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/SergDanilov/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SergDanilov/php-project-45/actions)
-### Maintainability Badge
-[![Maintainability](https://api.codeclimate.com/v1/badges/2c0c47005d943b508b0a/maintainability)](https://codeclimate.com/github/SergDanilov/php-project-45/maintainability)
 
