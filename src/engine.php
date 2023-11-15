@@ -14,10 +14,6 @@
  */
 namespace Hexlet\Code\engine;
 
-use Hexlet\Code\Games\evenOrNot;
-use Hexlet\Code\Games\brainCalculation;
-use Hexlet\Code\Games\brainGcd;
-
 use function cli\line;
 use function cli\prompt;
 
