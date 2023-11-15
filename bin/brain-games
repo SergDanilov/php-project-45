@@ -10,6 +10,6 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-$greetingPath = __DIR__ . '/../src/Cli.php';
+$greetingPath = __DIR__ . '/../src/greeting.php';
 require_once $greetingPath;
 ?>
