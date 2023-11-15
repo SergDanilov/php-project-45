@@ -1,10 +1,12 @@
-### BRAIN GAMES
+<h1 align="center"> BRAIN GAMES </h1>
 “Brain Games” is a set of five console games built on the principle of popular mobile applications for brain training. Each game asks questions that would be answered correctly. After three correct answers, the game is considered completed. Wrong answers end the game and prompt you to play it again. Included games:
-Brain-even. Definition of an even number.
-Brain-calc. Arithmetic expressions to be evaluated.
-Brain-gcd. Determination of the greatest common divisor.
-Brain-progression. Progression. Finding missing numbers in a sequence of numbers.
-Brain-prime. Definition of a prime number.
+<ul>
+<li>Brain-even. Definition of an even number.</li>
+<li>Brain-calc. Arithmetic expressions to be evaluated.</li>
+<li>Brain-gcd. Determination of the greatest common divisor.</li>
+<li>Brain-progression. Progression. Finding missing numbers in a sequence of numbers.</li>
+<li>Brain-prime. Definition of a prime number.</li>
+</ul>
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/SergDanilov/php-project-45/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/SergDanilov/php-project-45/actions)
