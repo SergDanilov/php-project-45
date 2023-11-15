@@ -46,6 +46,5 @@ for ($i = 0; $i < 3;) {
     }
 }
 //winner
-if ($win == 3) {
-    line("Congratulations, {$name}!");
-}
+line("Congratulations, {$name}!");
+
