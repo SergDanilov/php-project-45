@@ -8,7 +8,7 @@
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
  * @copyright 2023 Sergey Danilov
  * @license   no Licence
- * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/evenOrNot.php
+ * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/evenOrNot.php
  */
 namespace Hexlet\Code\Games\evenOrNot;
 
@@ -37,12 +37,10 @@ for ($i = 0; $i < 3;) {
     $number = rand(1, 1000);
     line('Question: ' . $number);
     $answer = prompt("Your answer");
-    if ($number % 2 === 0) {
-        $correctAnswer = "yes";
-    } else {
-        $correctAnswer = "no";
-    }
+    ($number % 2 === 0)? $correctAnswer = "yes" : $correctAnswer = "no";
+
     include $engine_part;
+    // game over
     if ($gameOver) {
         break;
     }
