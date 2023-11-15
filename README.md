@@ -1,5 +1,5 @@
-<h1 align="center"> BRAIN GAMES </h1>
-“Brain Games” is a set of five console games built on the principle of popular mobile applications for brain training. Each game asks questions that would be answered correctly. After three correct answers, the game is considered completed. Wrong answers end the game and prompt you to play it again. Included games:
+# [BRAIN GAMES](https://github.com/SergDanilov/php-project-45/blob/main/README.md)
+<p><b>“Brain Games”</b> is a set of five console games built on the principle of popular mobile applications for brain training. Each game asks questions that would be answered correctly. After three correct answers, the game is considered completed. Wrong answers end the game and prompt you to play it again. Included games:</p>
 <ul>
 <li>Brain-even. Definition of an even number.</li>
 <li>Brain-calc. Arithmetic expressions to be evaluated.</li>
