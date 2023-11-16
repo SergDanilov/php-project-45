@@ -34,7 +34,7 @@ require_once $greeting_part;
 line('Answer "yes" if the number is even, otherwise answer "no".');
 $win = 0;
 $gameOver = false;
-for ($i = 0; $i < 3;) {
+for ($i = 0; $i < 3; $i++) {
     $number = rand(1, 1000);
     line('Question: ' . $number);
     $answer = prompt("Your answer");
@@ -45,6 +45,7 @@ for ($i = 0; $i < 3;) {
     if ($gameOver) {
         break;
     }
+    $win++;
 }
 //winner
 if ($win == 3) {

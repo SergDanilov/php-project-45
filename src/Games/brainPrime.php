@@ -34,7 +34,7 @@ require_once $greeting_part;
 line('Answer "yes" if given number is prime. Otherwise answer "no".');
 $win = 0;
 $gameOver = false;
-for ($i = 0; $i < 3;) {
+for ($i = 0; $i < 3; $i++) {
     $number = rand(1, 1000);
     $arrPrimes = [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
     37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
@@ -53,13 +53,14 @@ for ($i = 0; $i < 3;) {
     929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997];
     line("Question: " . $number);
     $answer = prompt("Your answer");
-    in_array($number, $arrPrimes) ? $correctAnswer = "yes" : $correctAnswer = "no";
+    in_array($number, $arrPrimes, false) ? $correctAnswer = "yes" : $correctAnswer = "no";
 
     include $engine_part;
     //game over
     if ($gameOver) {
         break;
     }
+    $win++;
 }
 //winner
 if ($win == 3) {

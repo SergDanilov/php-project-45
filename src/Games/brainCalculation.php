@@ -36,7 +36,7 @@ require_once $greeting_part;
 line("What is the result of the expression?");
 $win = 0;
 $gameOver = false;
-for ($i = 0; $i < 3;) {
+for ($i = 0; $i < 3; $i++) {
     $numberOne = rand(0, 100);
     $numberTwo = rand(0, 25);
     $operatorArray = ["+","-","*"];
@@ -62,6 +62,7 @@ for ($i = 0; $i < 3;) {
     if ($gameOver) {
         break;
     }
+    $win++;
 }
 //winner
 if ($win == 3) {

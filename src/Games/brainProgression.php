@@ -35,7 +35,7 @@ require_once $greeting_part;
 line('What number is missing in the progression?');
 $win = 0;
 $gameOver = false;
-for ($i = 0; $i < 3;) {
+for ($i = 0; $i < 3; $i++) {
     $startProgression = rand(0, 50);
     $step = rand(1, 10);
     $count = rand(0, 4);
@@ -57,6 +57,7 @@ for ($i = 0; $i < 3;) {
     if ($gameOver) {
         break;
     }
+    $win++;
 }
 //winner
 if ($win == 3) {

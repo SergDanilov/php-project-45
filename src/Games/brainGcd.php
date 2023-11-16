@@ -37,7 +37,7 @@ require_once $greeting_part;
 line('Find the greatest common divisor of given numbers.');
 $win = 0;
 $gameOver = false;
-for ($i = 0; $i < 3;) {
+for ($i = 0; $i < 3; $i++) {
     $numberOne = rand(1, 50);
     $numberTwo = rand(1, 50);
     $min = min($numberOne, $numberTwo);
@@ -59,6 +59,7 @@ for ($i = 0; $i < 3;) {
     if ($gameOver) {
         break;
     }
+    $win++;
 }
 //winner
 if ($win == 3) {
