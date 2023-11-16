@@ -1,10 +1,11 @@
 <?php
+
 /**
  * This allows greeting with User and know his name.
  * Then calculation random expression and asking user answer. 
  * After that comparing user's answer with correct answer.
  * php version 8.1.24
- * 
+ *
  * @category  LearnProject
  * @package   Phpproject
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
@@ -12,6 +13,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainCalculation.php
  */
+
 namespace Hexlet\Code\Games\brainCalculation;
 
 use Hexlet\Code\greeting;
@@ -35,25 +37,24 @@ line("What is the result of the expression?");
 $win = 0;
 $gameOver = false;
 for ($i = 0; $i < 3;) {
-
     $numberOne = rand(0, 100);
     $numberTwo = rand(0, 25);
-
     $operatorArray = ["+","-","*"];
     $indexRandom = rand(0, 2);
+
     $operator = $operatorArray[$indexRandom];
     switch ($operator) {
-    case "+":
-        $correctAnswer = $numberOne + $numberTwo;
-        break;
-    case "-":
-        $correctAnswer = $numberOne - $numberTwo;
-        break;
-    case "*":
-        $correctAnswer = $numberOne * $numberTwo;
-        break;
+        case "+":
+            $correctAnswer = $numberOne + $numberTwo;
+            break;
+        case "-":
+            $correctAnswer = $numberOne - $numberTwo;
+            break;
+        case "*":
+            $correctAnswer = $numberOne * $numberTwo;
+            break;
     }
-    
+
     line("Question: {$numberOne} {$operator} {$numberTwo}");
     $answer = prompt("Your answer");
 

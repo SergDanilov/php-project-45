@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Greeting and getting to know the game user's name
  * php version 8.1.24
@@ -12,6 +13,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/greeting.php
  */
+
 namespace Hexlet\Code\greeting;
 
 use function cli\line;

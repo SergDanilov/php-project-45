@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Game allows user to check random number, if it even or no. 
  * php version 8.1.24
@@ -10,6 +11,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/evenOrNot.php
  */
+
 namespace Hexlet\Code\Games\evenOrNot;
 
 use Hexlet\Code\engine;
@@ -17,7 +19,6 @@ use Hexlet\Code\greeting;
 
 use function cli\line;
 use function cli\prompt;
-
 
 $greeting_part = __DIR__ . '/../../src/greeting.php';
 $engine_part = __DIR__ . '/../../src/engine.php';
@@ -37,7 +38,7 @@ for ($i = 0; $i < 3;) {
     $number = rand(1, 1000);
     line('Question: ' . $number);
     $answer = prompt("Your answer");
-    ($number % 2 === 0)? $correctAnswer = 'yes' : $correctAnswer = 'no';
+    ($number % 2 === 0) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
 
     include $engine_part;
     // game over

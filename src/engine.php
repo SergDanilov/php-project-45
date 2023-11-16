@@ -1,9 +1,10 @@
 <?php
+
 /**
  * Engine it is a same part of each game
  * php version 8.1.24
  *
- * This allows use same code in each game 
+ * This allows use same code in each game
  *
  * @category  LearnProject
  * @package   Phpproject
@@ -12,6 +13,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/engine.php
  */
+
 namespace Hexlet\Code\engine;
 
 use function cli\line;
@@ -31,4 +33,3 @@ if ($answer == $correctAnswer) {
     $gameOver = true;
     include_once $backToGame;
 }
-

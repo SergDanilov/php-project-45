@@ -1,6 +1,7 @@
 <?php
+
 /**
- * Game allows user to check random number if it's prime or no. 
+ * Game allows user to check random number if it's prime or no.
  * php version 8.1.24
  *
  * @category  LearnProject
@@ -10,6 +11,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainPrime.php
  */
+
 namespace Hexlet\Code\Games\brainPrime;
 
 use Hexlet\Code\engine;
@@ -17,7 +19,6 @@ use Hexlet\Code\greeting;
 
 use function cli\line;
 use function cli\prompt;
-
 
 $greeting_part = __DIR__ . '/../../src/greeting.php';
 $engine_part = __DIR__ . '/../../src/engine.php';
@@ -52,7 +53,7 @@ for ($i = 0; $i < 3;) {
     929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997];
     line("Question: " . $number);
     $answer = prompt("Your answer");
-    in_array($number, $arrPrimes)? $correctAnswer = "yes": $correctAnswer = "no";
+    in_array($number, $arrPrimes) ? $correctAnswer = "yes" : $correctAnswer = "no";
 
     include $engine_part;
     //game over

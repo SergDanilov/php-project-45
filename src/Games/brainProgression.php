@@ -1,9 +1,10 @@
 <?php
+
 /**
  * This allows greeting with User and know his name.
  * The games goal is answer what part of arithmetic progression was missed.
  * php version 8.1.24
- * 
+ *
  * @category  LearnProject
  * @package   Phpproject
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
@@ -11,6 +12,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainProgression.php
  */
+
 namespace Hexlet\Code\Games\brainProgression;
 
 use Hexlet\Code\greeting;
@@ -34,7 +36,6 @@ line('What number is missing in the progression?');
 $win = 0;
 $gameOver = false;
 for ($i = 0; $i < 3;) {
-
     $startProgression = rand(0, 50);
     $step = rand(1, 10);
     $count = rand(0, 4);

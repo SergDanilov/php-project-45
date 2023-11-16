@@ -1,10 +1,11 @@
 <?php
+
 /**
  * This allows greeting with User and know his name.
  * Then calculation greatest common divisor by two randoms numbers.
  * After that comparing user's answer with correct answer.
  * php version 8.1.24
- * 
+ *
  * @category  LearnProject
  * @package   Phpproject
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
@@ -12,6 +13,7 @@
  * @license   no Licence
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainGcd.php
  */
+
 namespace Hexlet\Code\Games\brainGcd;
 
 use Hexlet\Code\greeting;
@@ -36,24 +38,23 @@ line('Find the greatest common divisor of given numbers.');
 $win = 0;
 $gameOver = false;
 for ($i = 0; $i < 3;) {
-
     $numberOne = rand(1, 50);
     $numberTwo = rand(1, 50);
-
     $min = min($numberOne, $numberTwo);
+
     $arrDivisor = [];
 
     for ($j = 1; $j <= $min; $j++) {
-        if (($numberOne % $j === 0) && ($numberTwo % $j ===0)) {
+        if (($numberOne % $j === 0) && ($numberTwo % $j === 0)) {
             $arrDivisor[$j] = $j;
         }
     }
-    
+
     $correctAnswer = max($arrDivisor);
-    
+
     line("Question: {$numberOne} {$numberTwo}");
     $answer = prompt("Your answer");
-    
+
     include $engine_part;
     if ($gameOver) {
         break;
