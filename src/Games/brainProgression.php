@@ -35,7 +35,7 @@ require_once $greeting_part;
 //main part game
 line('What number is missing in the progression?');
 $win = 0;
-$gameOver = 0;
+$gameOver = 'no';
 for ($i = 0; $i < 3; $i++) {
     $startProgression = rand(0, 50);
     $step = rand(1, 10);
@@ -55,7 +55,7 @@ for ($i = 0; $i < 3; $i++) {
     line("Question: {$progression}");
     $answer = prompt("Your answer");
     include $engine_part;
-    if ($gameOver == 1) {
+    if ($gameOver === 'yes') {
         break;
     } else {
         $win++;

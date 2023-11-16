@@ -36,7 +36,7 @@ require_once $greeting_part;
 //main part game
 line('Find the greatest common divisor of given numbers.');
 $win = 0;
-$gameOver = 0;
+$gameOver = 'no';
 for ($i = 0; $i < 3; $i++) {
     $numberOne = rand(1, 50);
     $numberTwo = rand(1, 50);
@@ -56,7 +56,7 @@ for ($i = 0; $i < 3; $i++) {
     $answer = prompt("Your answer");
 
     include $engine_part;
-    if ($gameOver == 1) {
+    if ($gameOver === 'yes') {
         break;
     } else {
         $win++;

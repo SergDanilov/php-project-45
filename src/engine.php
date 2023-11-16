@@ -34,6 +34,6 @@ if ($answer == $correctAnswer) {
     line("'{$answer}' is wrong answer ;(.");
     line("Correct answer was '{$correctAnswer}'.");
     line("Let's try again, {$name}!");
-    $gameOver = 1;
+    $gameOver = 'yes';
     include_once $backToGame;
 }
