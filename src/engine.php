@@ -23,6 +23,7 @@ global $homePath;
 global $answer;
 global $correctAnswer;
 global $name;
+global $gameOver;
 
 $backToGame = $homePath;
 

@@ -60,7 +60,7 @@ for ($i = 0; $i < 3; $i++) {
     $answer = prompt("Your answer");
 
     include $engine_part;
-    if ($gameOver === 1) {
+    if ($gameOver == 1) {
         break;
     } else {
         $win++;

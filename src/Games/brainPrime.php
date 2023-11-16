@@ -58,7 +58,7 @@ for ($i = 0; $i < 3; $i++) {
 
     include $engine_part;
     //game over
-    if ($gameOver === 1) {
+    if ($gameOver == 1) {
         break;
     } else {
         $win++;
