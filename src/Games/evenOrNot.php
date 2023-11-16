@@ -24,7 +24,6 @@ $greeting_part = __DIR__ . '/../../src/greeting.php';
 $engine_part = __DIR__ . '/../../src/engine.php';
 $homePath = __DIR__ . '/../../src/Games/evenOrNot.php';
 
-global $gameOver;
 global $homePath;
 global $name;
 
@@ -33,8 +32,6 @@ require_once $greeting_part;
 
 //main part game
 line('Answer "yes" if the number is even, otherwise answer "no".');
-$win = 0;
-$gameOver = 'no';
 for ($i = 0; $i < 3; $i++) {
     $number = rand(1, 1000);
     line('Question: ' . $number);
@@ -42,14 +39,6 @@ for ($i = 0; $i < 3; $i++) {
     ($number % 2 === 0) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
 
     include $engine_part;
-    // game over
-    if ($gameOver === 'yes') {
-        break;
-    } else {
-        $win++;
-    }
 }
 //winner
-if ($win == 3) {
-    line("Congratulations, {$name}!");
-}
+line("Congratulations, {$name}!");
