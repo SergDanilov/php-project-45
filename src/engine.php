@@ -23,7 +23,6 @@ global $homePath;
 global $answer;
 global $correctAnswer;
 global $name;
-global $gameOver;
 
 $backToGame = $homePath;
 
@@ -34,6 +33,5 @@ if ($answer == $correctAnswer) {
     line("'{$answer}' is wrong answer ;(.");
     line("Correct answer was '{$correctAnswer}'.");
     line("Let's try again, {$name}!");
-    $gameOver = 'yes';
-    include_once $backToGame;
+    exit;
 }
