@@ -28,6 +28,7 @@ $homePath = __DIR__ . '/../../src/Games/brainCalculation.php';
 
 global $gameOver;
 global $homePath;
+global $name;
 
 //greeting part
 require_once $greeting_part;
@@ -59,7 +60,7 @@ for ($i = 0; $i < 3; $i++) {
     $answer = prompt("Your answer");
 
     include $engine_part;
-    if ($gameOver) {
+    if ($gameOver === true) {
         break;
     } else {
         $win++;

@@ -42,7 +42,7 @@ for ($i = 0; $i < 3; $i++) {
 
     include $engine_part;
     // game over
-    if ($gameOver) {
+    if ($gameOver === true) {
         break;
     } else {
         $win++;
