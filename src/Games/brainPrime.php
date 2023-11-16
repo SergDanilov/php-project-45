@@ -53,14 +53,15 @@ for ($i = 0; $i < 3; $i++) {
     929, 937, 941, 947, 953, 967, 971, 977, 983, 991, 997];
     line("Question: " . $number);
     $answer = prompt("Your answer");
-    in_array($number, $arrPrimes, false) ? $correctAnswer = "yes" : $correctAnswer = "no";
+    in_array($number, $arrPrimes, true) ? $correctAnswer = "yes" : $correctAnswer = "no";
 
     include $engine_part;
     //game over
     if ($gameOver) {
         break;
+    } else {
+        $win++;
     }
-    $win++;
 }
 //winner
 if ($win == 3) {

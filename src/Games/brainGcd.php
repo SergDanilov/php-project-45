@@ -58,8 +58,9 @@ for ($i = 0; $i < 3; $i++) {
     include $engine_part;
     if ($gameOver) {
         break;
+    } else {
+        $win++;
     }
-    $win++;
 }
 //winner
 if ($win == 3) {

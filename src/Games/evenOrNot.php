@@ -44,8 +44,9 @@ for ($i = 0; $i < 3; $i++) {
     // game over
     if ($gameOver) {
         break;
+    } else {
+        $win++;
     }
-    $win++;
 }
 //winner
 if ($win == 3) {
