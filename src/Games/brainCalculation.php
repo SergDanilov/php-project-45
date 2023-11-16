@@ -36,7 +36,7 @@ require_once $greeting_part;
 //main part game
 line("What is the result of the expression?");
 $win = 0;
-$gameOver = false;
+$gameOver = 0;
 for ($i = 0; $i < 3; $i++) {
     $numberOne = rand(0, 100);
     $numberTwo = rand(0, 25);
@@ -60,7 +60,7 @@ for ($i = 0; $i < 3; $i++) {
     $answer = prompt("Your answer");
 
     include $engine_part;
-    if ($gameOver === true) {
+    if ($gameOver === 1) {
         break;
     } else {
         $win++;

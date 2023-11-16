@@ -27,6 +27,7 @@ $homePath = __DIR__ . '/../../src/Games/brainProgression.php';
 
 global $gameOver;
 global $homePath;
+global $name;
 
 //greeting part
 require_once $greeting_part;
@@ -34,7 +35,7 @@ require_once $greeting_part;
 //main part game
 line('What number is missing in the progression?');
 $win = 0;
-$gameOver = false;
+$gameOver = 0;
 for ($i = 0; $i < 3; $i++) {
     $startProgression = rand(0, 50);
     $step = rand(1, 10);
@@ -54,7 +55,7 @@ for ($i = 0; $i < 3; $i++) {
     line("Question: {$progression}");
     $answer = prompt("Your answer");
     include $engine_part;
-    if ($gameOver) {
+    if ($gameOver === 1) {
         break;
     } else {
         $win++;

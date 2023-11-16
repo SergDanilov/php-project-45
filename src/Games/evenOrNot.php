@@ -26,6 +26,7 @@ $homePath = __DIR__ . '/../../src/Games/evenOrNot.php';
 
 global $gameOver;
 global $homePath;
+global $name;
 
 //greeting part
 require_once $greeting_part;
@@ -33,7 +34,7 @@ require_once $greeting_part;
 //main part game
 line('Answer "yes" if the number is even, otherwise answer "no".');
 $win = 0;
-$gameOver = false;
+$gameOver = 0;
 for ($i = 0; $i < 3; $i++) {
     $number = rand(1, 1000);
     line('Question: ' . $number);
@@ -42,7 +43,7 @@ for ($i = 0; $i < 3; $i++) {
 
     include $engine_part;
     // game over
-    if ($gameOver === true) {
+    if ($gameOver === 1) {
         break;
     } else {
         $win++;

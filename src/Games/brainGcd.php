@@ -28,7 +28,7 @@ $homePath = __DIR__ . '/../../src/Games/brainGcd.php';
 
 global $gameOver;
 global $homePath;
-
+global $name;
 
 //greeting part
 require_once $greeting_part;
@@ -36,7 +36,7 @@ require_once $greeting_part;
 //main part game
 line('Find the greatest common divisor of given numbers.');
 $win = 0;
-$gameOver = false;
+$gameOver = 0;
 for ($i = 0; $i < 3; $i++) {
     $numberOne = rand(1, 50);
     $numberTwo = rand(1, 50);
@@ -56,7 +56,7 @@ for ($i = 0; $i < 3; $i++) {
     $answer = prompt("Your answer");
 
     include $engine_part;
-    if ($gameOver) {
+    if ($gameOver === 1) {
         break;
     } else {
         $win++;

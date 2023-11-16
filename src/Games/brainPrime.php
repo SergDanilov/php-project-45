@@ -26,6 +26,7 @@ $homePath = __DIR__ . '/../../src/Games/brainPrime.php';
 
 global $gameOver;
 global $homePath;
+global $name;
 
 //greeting part
 require_once $greeting_part;
@@ -33,7 +34,7 @@ require_once $greeting_part;
 //main part game
 line('Answer "yes" if given number is prime. Otherwise answer "no".');
 $win = 0;
-$gameOver = false;
+$gameOver = 0;
 for ($i = 0; $i < 3; $i++) {
     $number = rand(1, 1000);
     $arrPrimes = [ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31,
@@ -57,7 +58,7 @@ for ($i = 0; $i < 3; $i++) {
 
     include $engine_part;
     //game over
-    if ($gameOver) {
+    if ($gameOver === 1) {
         break;
     } else {
         $win++;
