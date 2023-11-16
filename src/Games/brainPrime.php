@@ -30,7 +30,7 @@ global $homePath;
 require_once $greeting_part;
 
 //main part game
-line("Answer 'yes' if given number is prime. Otherwise answer 'no'.");
+line('Answer "yes" if given number is prime. Otherwise answer "no".');
 $win = 0;
 $gameOver = false;
 for ($i = 0; $i < 3;) {

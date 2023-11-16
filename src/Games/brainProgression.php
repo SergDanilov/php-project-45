@@ -30,7 +30,7 @@ global $homePath;
 require_once $greeting_part;
 
 //main part game
-line("What number is missing in the progression?");
+line('What number is missing in the progression?');
 $win = 0;
 $gameOver = false;
 for ($i = 0; $i < 3;) {

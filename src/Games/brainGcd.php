@@ -32,7 +32,7 @@ global $homePath;
 require_once $greeting_part;
 
 //main part game
-line("Find the greatest common divisor of given numbers.");
+line('Find the greatest common divisor of given numbers.');
 $win = 0;
 $gameOver = false;
 for ($i = 0; $i < 3;) {

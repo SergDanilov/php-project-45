@@ -20,14 +20,14 @@ use function cli\prompt;
 $backToGame = $homePath;
 
 if ($answer == $correctAnswer) {
-    line("Correct!");
+    line('Correct!');
     $i++;
     $win++;
     include_once $backToGame;
 } else {
-    line("'{$answer}' is wrong answer ;(.");
-    line("Correct answer was '{$correctAnswer}'.");
-    line("Let's try again, " . $name . "!");
+    line('"{$answer}" is wrong answer ;(.');
+    line('Correct answer was "{$correctAnswer}".');
+    line('Let\'s try again, ' . $name . '!');
     $gameOver = true;
     include_once $backToGame;
 }
