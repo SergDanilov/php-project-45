@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Game allows user to check random number, if it even or no. 
+ * Game allows user to check random number, if it even or no.
  * php version 8.1.24
  *
  * @category  LearnProject

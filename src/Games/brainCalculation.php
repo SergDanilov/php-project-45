@@ -2,7 +2,7 @@
 
 /**
  * This allows greeting with User and know his name.
- * Then calculation random expression and asking user answer. 
+ * Then calculation random expression and asking user answer.
  * After that comparing user's answer with correct answer.
  * php version 8.1.24
  *

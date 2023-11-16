@@ -50,10 +50,9 @@ for ($i = 0; $i < 3;) {
     $correctAnswer = $arrProgression[$missedIndex];
     $arrProgression[$missedIndex] = "..";
     $progression = implode(" ", $arrProgression);
-    
+
     line("Question: {$progression}");
     $answer = prompt("Your answer");
-    
     include $engine_part;
     if ($gameOver) {
         break;
