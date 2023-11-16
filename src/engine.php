@@ -19,6 +19,11 @@ namespace Hexlet\Code\engine;
 use function cli\line;
 use function cli\prompt;
 
+global $homePath;
+global $answer;
+global $correctAnswer;
+global $name;
+
 $backToGame = $homePath;
 
 if ($answer == $correctAnswer) {
@@ -28,6 +33,6 @@ if ($answer == $correctAnswer) {
     line("'{$answer}' is wrong answer ;(.");
     line("Correct answer was '{$correctAnswer}'.");
     line("Let's try again, {$name}!");
-    $gameOver = true;
+    $gameOver = 1;
     include_once $backToGame;
 }
