@@ -19,23 +19,27 @@
 <li>
 
 ### [Asciinema link for brain-even game](https://asciinema.org/a/Pez3oOIWW7bMGp72YNZviF2X7)
-
+[![asciicast](https://asciinema.org/a/Pez3oOIWW7bMGp72YNZviF2X7.svg)](https://asciinema.org/a/Pez3oOIWW7bMGp72YNZviF2X7)
 </li>
 <li>
 
 ### [Asciinema link for brain-calc game](https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A)
+[![asciicast](https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A.svg)](https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A)
 </li>
 <li> 
 
 ### [Asciinema link for brain-gcd game](https://asciinema.org/a/620512)
+[![asciicast](https://asciinema.org/a/620512.svg)](https://asciinema.org/a/620512)
 </li>
 <li>
 
 ### [Asciinema link for brain-progression game](https://asciinema.org/a/620751)
+[![asciicast](https://asciinema.org/a/620751.svg)](https://asciinema.org/a/620751)
 </li>
 <li>
 
 ### [Asciinema link for brain-prime game](https://asciinema.org/a/621071)
+[![asciicast](https://asciinema.org/a/620751.svg)](https://asciinema.org/a/620751)
 </li>
 </ul>
 
