@@ -28,12 +28,12 @@
 </li>
 <li> 
 
-### [Asciinema link for brain-gcd game](https://asciinema.org/a/620512)
+### [Asciinema link for brain-gcd game](https://asciinema.org/a/620512 target="_blank")
 [![asciicast](https://asciinema.org/a/620512.svg)](https://asciinema.org/a/620512)
 </li>
 <li>
 
-### [Asciinema link for brain-progression game](https://asciinema.org/a/620751)
+### <a href="https://asciinema.org/a/620751" target="_blank"><img src="https://asciinema.org/a/620751.svg" />Asciinema link for brain-progression game</a>
 [![asciicast](https://asciinema.org/a/620751.svg)](https://asciinema.org/a/620751)
 </li>
 <li>
