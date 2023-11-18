@@ -22,7 +22,7 @@
 ## Setup
 
 ```bash
-git clone https://github.com/SergDanilov/php-project-45.gi
+git clone https://github.com/SergDanilov/php-project-45.git
 cd php-project-45
 make install
 ```
