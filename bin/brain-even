@@ -1,7 +1,11 @@
 #!/usr/bin/env php
 <?php #Проверка числа на четность
 
-use  Hexlet\Code\Games\evenOrNot;
+use Hexlet\Code\Games\evenOrNot;
+
+use function Hexlet\Code\greeting\welcome;
+use function Hexlet\Code\Games\evenOrNot\run;
+use function cli\line;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -10,6 +14,9 @@ if (file_exists($autoloadPath1)) {
 } else {
     require_once $autoloadPath2;
 }
-$evenGamePath = __DIR__ . '/../src/Games/evenOrNot.php';
-require_once $evenGamePath;
+welcome();
+run();
+// $evenGamePath = __DIR__ . '/../src/Games/evenOrNot.php';
+// require_once $evenGamePath;
+
 ?>
