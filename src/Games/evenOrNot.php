@@ -19,26 +19,30 @@ use Hexlet\Code\greeting;
 
 use function cli\line;
 use function cli\prompt;
+use function welcome;
 
-$greeting_part = __DIR__ . '/../../src/greeting.php';
-$engine_part = __DIR__ . '/../../src/engine.php';
-$homePath = __DIR__ . '/../../src/Games/evenOrNot.php';
+function run(): void
+{
+    $greeting_part = __DIR__ . '/../../src/greeting.php';
+    $engine_part = __DIR__ . '/../../src/engine.php';
+    $homePath = __DIR__ . '/../../src/Games/evenOrNot.php';
 
-global $homePath;
-global $name;
+    global $homePath;
+    global $name;
 
-//greeting part
-require_once $greeting_part;
+    //greeting part
+    // require_once $greeting_part;
 
-//main part game
-line('Answer "yes" if the number is even, otherwise answer "no".');
-for ($i = 0; $i < 3; $i++) {
-    $number = rand(1, 1000);
-    line('Question: ' . $number);
-    $answer = prompt("Your answer");
-    ($number % 2 === 0) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
+    //main part game
+    line('Answer "yes" if the number is even, otherwise answer "no".');
+    for ($i = 0; $i < 3; $i++) {
+        $number = rand(1, 1000);
+        line('Question: ' . $number);
+        $answer = prompt("Your answer");
+        ($number % 2 === 0) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
 
-    include $engine_part;
+        include $engine_part;
+    }
+    //winner
+    line("Congratulations, {$name}!");
 }
-//winner
-line("Congratulations, {$name}!");
