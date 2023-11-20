@@ -15,6 +15,7 @@
         },
         "files": [
             "src/engine.php",
+            "src/greeting.php",
             "src/Games/evenOrNot.php",
             "src/Games/brainGcd.php",
             "src/Games/brainProgression.php",
