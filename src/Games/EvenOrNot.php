@@ -32,7 +32,7 @@ function runBrainEven()
     //main part game
     line(TASK);
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
-        $number = rand(1, 1000);
+        $number = rand(1, 100);
         line('Question: ' . $number);
         $answer = prompt("Your answer");
         ($number % 2 === 0) ? $correctAnswer = 'yes' : $correctAnswer = 'no';

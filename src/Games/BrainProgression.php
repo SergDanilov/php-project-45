@@ -33,7 +33,7 @@ function runBrainProgression()
     //main part game
     line(TASK);
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
-        $startProgression = rand(0, 50);
+        $startProgression = rand(0, 100);
         $step = rand(1, 10);
         $count = rand(0, 4);
         $missedIndex = rand(4, 9);

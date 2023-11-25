@@ -35,7 +35,7 @@ function runBrainCalc()
     line(TASK);
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $numberOne = rand(0, 100);
-        $numberTwo = rand(0, 25);
+        $numberTwo = rand(0, 100);
         $operatorArray = ["+","-","*"];
         $indexRandom = rand(0, 2);
 

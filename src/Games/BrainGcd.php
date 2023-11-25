@@ -34,8 +34,8 @@ function runBrainGcd()
     //main part game
     line(TASK);
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
-        $numberOne = rand(1, 50);
-        $numberTwo = rand(1, 50);
+        $numberOne = rand(1, 100);
+        $numberTwo = rand(1, 100);
         $min = min($numberOne, $numberTwo);
 
         $arrDivisor = [];
