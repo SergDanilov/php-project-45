@@ -41,7 +41,7 @@ function runBrainPrime()
                 $checkArray[] = $k;
             }
         }
-        empty($checkArray) && ($number !== 1) ? $correctAnswer = "yes" : $correctAnswer = "no";
+        (count($checkArray) === 0) && ($number !== 1) ? $correctAnswer = "yes" : $correctAnswer = "no";
 
         engine_part($name, $answer, $correctAnswer);
     }
