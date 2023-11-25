@@ -11,16 +11,15 @@
     "description": "Mind Games is a set of five console games built on the principle of popular mobile applications for brain training. Each game asks questions that must be answered correctly. After three correct answers, the game is considered completed. Wrong answers end the game and prompt you to play it again.",
     "autoload": {
         "psr-4": {
-            "Hexlet\\Code\\": "src"
+            "Braingames\\": "src"
         },
         "files": [
-            "src/engine.php",
-            "src/greeting.php",
-            "src/Games/evenOrNot.php",
-            "src/Games/brainGcd.php",
-            "src/Games/brainProgression.php",
-            "src/Games/brainPrime.php",
-            "src/Games/brainCalculation.php"
+            "src/Engine.php",
+            "src/Games/EvenOrNot.php",
+            "src/Games/BrainGcd.php",
+            "src/Games/BrainProgression.php",
+            "src/Games/BrainPrime.php",
+            "src/Games/BrainCalculation.php"
         ]
     },
     "authors": [
