@@ -15,7 +15,6 @@
 namespace Braingames\Games\EvenOrNot;
 
 use function Braingames\Engine\engine_part;
-use function Braingames\Greeting\welcome;
 use function cli\line;
 use function cli\prompt;
 
