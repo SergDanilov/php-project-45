@@ -21,7 +21,7 @@ use function cli\prompt;
 
 const ROUNDS_COUNT = 3;
 
-function engine_part($name, $answer, $correctAnswer)
+function engine_part(string $name, mixed $answer, mixed $correctAnswer)
 {
     if ($answer == $correctAnswer) {
         line('Correct!');
