@@ -1,6 +1,7 @@
 {
     "name": "hexlet/code",
     "bin": [
+	      "bin/brain-games",
 	      "bin/brain-even",
           "bin/brain-calc",
           "bin/brain-gcd",
@@ -14,6 +15,7 @@
         },
         "files": [
             "src/Engine.php",
+            "src/Wellcome.php",
             "src/Games/EvenOrNot.php",
             "src/Games/BrainGcd.php",
             "src/Games/BrainProgression.php",
