@@ -4,7 +4,7 @@
 
 # Starting the game, greeting, pre-setting
 
-use function Braingames\Wellcome\runWellcome;
+use function Braingames\Welcome\runWelcome;
 
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
@@ -15,4 +15,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-runWellcome();
+runWelcome();
