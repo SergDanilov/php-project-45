@@ -25,28 +25,22 @@ const RANDOM_END_NUM = 100;
 
 function runGameEngine(array $questions, array $correctAnswers, string $task)
 {
-    //greeting
     line('Welcome to the Brain Games!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    // game task
     line();
     line($task);
     line();
-    // questions
     for ($k = 0; $k < ROUNDS_COUNT; $k++) {
-        line("Question: " . $questions[$k]);
+        line("Question: %s", $questions[$k]);
         $answer = prompt("Your answer");
-        if ($answer == $correctAnswers[$k]) {
-            line('Correct!');
-        } else {
-            // loser
+        if ($answer != $correctAnswers[$k]) {
             line("'{$answer}' is wrong answer ;(.");
             line("Correct answer was '{$correctAnswers[$k]}'.");
             line("Let's try again, {$name}!");
             return;
         }
+        line('Correct!');
     }
-    // winner
     line("Congratulations, {$name}!");
 }
