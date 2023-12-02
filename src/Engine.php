@@ -31,12 +31,12 @@ function runGameEngine(array $questions, array $correctAnswers, string $task)
     line();
     line($task);
     line();
-    for ($k = 0; $k < ROUNDS_COUNT; $k++) {
-        line("Question: %s", $questions[$k]);
+    foreach ($questions as $key => $question) {
+        line("Question: %s", $question);
         $answer = prompt("Your answer");
-        if ($answer != $correctAnswers[$k]) {
+        if ($answer != $correctAnswers[$key]) {
             line("'{$answer}' is wrong answer ;(.");
-            line("Correct answer was '{$correctAnswers[$k]}'.");
+            line("Correct answer was '{$correctAnswers[$key]}'.");
             line("Let's try again, {$name}!");
             return;
         }
