@@ -54,21 +54,10 @@ make brain-prime
 ```
 
 ## [List of asciinema links for games](https://asciinema.org/~SergeyDani85)
-
-
-* ### [Asciinema link for brain-even game](https://asciinema.org/a/Pez3oOIWW7bMGp72YNZviF2X7)
-[![asciicast](https://asciinema.org/a/Pez3oOIWW7bMGp72YNZviF2X7.svg)](https://asciinema.org/a/Pez3oOIWW7bMGp72YNZviF2X7)
-
-* ### [Asciinema link for brain-calc game](https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A)
-[![asciicast](https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A.svg)](https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A)
-
-* ### [Asciinema link for brain-gcd game](https://asciinema.org/a/620512)
-[![asciicast](https://asciinema.org/a/620512.svg)](https://asciinema.org/a/620512)
-
-* ### [Asciinema link for brain-progression game](https://asciinema.org/a/620751)
-[![asciicast](https://asciinema.org/a/620751.svg)](https://asciinema.org/a/620751)
-
-* ### [Asciinema link for brain-prime game](https://asciinema.org/a/621071)
-[![asciicast](https://asciinema.org/a/620751.svg)](https://asciinema.org/a/620751)
-
-
+<a href="https://asciinema.org/a/624613" target="_blank"><img src="https://asciinema.org/a/624613.svg" height="auto" width="100%" alt="brain-even game demostration" title="brain-even"/></a>
+<div align="left">
+  <a href="https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A" target="_blank"><img src="https://asciinema.org/a/3dPHGqIPAasyczp4gzgIMxJ9A.svg" height="auto" width="49%" alt="brain-calc game demostration" title="brain-calc"/></a>
+  <a href="https://asciinema.org/a/620512" target="_blank"><img src="https://asciinema.org/a/620512.svg" height="auto" width="49%" alt="brain-gcd game demostration" title="brain-gcd"/></a>
+  <a href="https://asciinema.org/a/620751" target="_blank"><img src="https://asciinema.org/a/620751.svg" height="auto" width="49%" alt="brain-progression game demostration" title="brain-progression"/></a>
+  <a href="https://asciinema.org/a/621071" target="_blank"><img src="https://asciinema.org/a/621071.svg" height="auto" width="49%" alt="brain-prime game demostration" title="brain-prime"/></a>
+</div>
