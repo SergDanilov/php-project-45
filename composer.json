@@ -15,12 +15,12 @@
         },
         "files": [
             "src/Engine.php",
-            "src/Wellcome.php",
+            "src/Welcome.php",
             "src/Games/EvenOrNot.php",
             "src/Games/BrainGcd.php",
             "src/Games/BrainProgression.php",
             "src/Games/BrainPrime.php",
-            "src/Games/BrainCalculation.php"
+            "src/Games/BrainCalc.php"
         ]
     },
     "authors": [
