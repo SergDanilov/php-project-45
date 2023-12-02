@@ -48,9 +48,8 @@ function runBrainCalc()
                 $correctAnswers[$i] = $numberOne * $numberTwo;
                 break;
             default:
-                throw new Error(`Unknown operator: '${operator}'!`);
+                throw new Error("Unknown operator: '${operator}'!");
         }
-
         $questions[$i] = "{$numberOne} {$operator} {$numberTwo}";
     }
     runGameEngine($questions, $correctAnswers, TASK);
