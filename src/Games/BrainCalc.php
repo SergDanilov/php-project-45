@@ -48,6 +48,8 @@ function runBrainCalc()
             case "*":
                 $correctAnswers[$i] = $numberOne * $numberTwo;
                 break;
+            default:
+                throw new Error(`Unknown operator: '${operator}'!`);
         }
 
         $questions[$i] = "{$numberOne} {$operator} {$numberTwo}";
