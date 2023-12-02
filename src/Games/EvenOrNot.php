@@ -39,7 +39,7 @@ function runBrainEven()
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $questions[$i] = rand(RANDOM_START_NUM, RANDOM_END_NUM);
         foreach ($questions as $item) {
-            isEven($item) ? $correctAnswers[$i] = 'yes' : $correctAnswers[$i] = 'no';
+            $correctAnswers[$i] = isEven($item) ?  'yes' : 'no';
         }
     }
     runGameEngine($questions, $correctAnswers, TASK);
