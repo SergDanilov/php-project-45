@@ -27,7 +27,6 @@ const TASK = 'Find the greatest common divisor of given numbers.';
 
 function runBrainGcd()
 {
-    //main part game
     $questions = [];
     $correctAnswers = [];
 

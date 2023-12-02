@@ -32,7 +32,6 @@ function isEven(int $item)
 
 function runBrainEven()
 {
-    //main part game
     $questions = [];
     $correctAnswers = [];
 

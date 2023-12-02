@@ -27,7 +27,6 @@ const TASK = "What is the result of the expression?";
 
 function runBrainCalc()
 {
-    //main part game
     $questions = [];
     $correctAnswers = [];
 

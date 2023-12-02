@@ -40,7 +40,6 @@ function isPrime(int $item)
 
 function runBrainPrime()
 {
-    //main part game
     $questions = [];
     $correctAnswers = [];
 

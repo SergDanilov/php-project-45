@@ -26,7 +26,6 @@ const TASK = 'What number is missing in the progression?';
 
 function runBrainProgression()
 {
-    //main part game
     $questions = [];
     $correctAnswers = [];
 
