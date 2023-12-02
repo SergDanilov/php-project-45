@@ -24,7 +24,7 @@ use const Braingames\Engine\RANDOM_END_NUM;
 
 const TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-function isPrime($item)
+function isPrime(int $item)
 {
     $checkArray = [];
     for ($k = 2; $k < $item; $k++) {

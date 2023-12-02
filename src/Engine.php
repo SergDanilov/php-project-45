@@ -23,7 +23,7 @@ const ROUNDS_COUNT = 3;
 const RANDOM_START_NUM = 1;
 const RANDOM_END_NUM = 100;
 
-function runGameEngine(array $questions, mixed $correctAnswers, string $task)
+function runGameEngine(array $questions, array $correctAnswers, string $task)
 {
     //greeting
     line('Welcome to the Brain Games!');

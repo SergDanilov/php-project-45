@@ -25,7 +25,7 @@ use const Braingames\Engine\RANDOM_END_NUM;
 const TASK = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 
-function isEven($item)
+function isEven(int $item)
 {
     return $item % 2 === 0;
 }
