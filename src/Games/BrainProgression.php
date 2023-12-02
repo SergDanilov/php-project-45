@@ -1,7 +1,6 @@
 <?php
 
 /**
- * This allows greeting with User and know his name.
  * The games goal is answer what part of arithmetic progression was missed.
  * php version 8.1.24
  *
@@ -13,46 +12,40 @@
  * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainProgression.php
  */
 
-namespace Braingames\Games\brainProgression;
+namespace Braingames\Games\BrainProgression;
 
-use function Braingames\Engine\engine_part;
+use function Braingames\Engine\runGameEngine;
 use function cli\line;
 use function cli\prompt;
 
 use const Braingames\Engine\ROUNDS_COUNT;
+use const Braingames\Engine\RANDOM_START_NUM;
+use const Braingames\Engine\RANDOM_END_NUM;
 
 const TASK = 'What number is missing in the progression?';
 
 function runBrainProgression()
 {
-    //greeting
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-
     //main part game
-    line(TASK);
-    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
-        $startProgression = rand(0, 100);
-        $step = rand(1, 10);
-        $count = rand(0, 4);
-        $missedIndex = rand(4, 9);
-        $arrProgression = [];
+    $questions = [];
+    $correctAnswers = [];
 
-        for ($j = $startProgression, $k = $count; $k < 10; $j = $j + $step) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
+        $startProgression = rand(RANDOM_START_NUM, RANDOM_END_NUM);
+        $stepProgression = rand(1, 10);
+        $startProgressionIndex = rand(0, 4);
+
+        $arrProgression = [];
+        for ($j = $startProgression, $k = $startProgressionIndex; $k < 10; $j = $j + $stepProgression) {
                 $arrProgression[$k] = $j;
                 $k = $k + 1;
         }
 
-        $correctAnswer = $arrProgression[$missedIndex];
-        $arrProgression[$missedIndex] = "..";
-        $progression = implode(" ", $arrProgression);
+        $missedProgressionIndex = rand(4, 9);
+        $correctAnswers[$i] = $arrProgression[$missedProgressionIndex];
+        $arrProgression[$missedProgressionIndex] = "..";
 
-        line("Question: {$progression}");
-        $answer = prompt("Your answer");
-
-        engine_part($name, $answer, $correctAnswer);
+        $questions[$i] = implode(" ", $arrProgression);
     }
-    //winner
-    line("Congratulations, {$name}!");
+    runGameEngine($questions, $correctAnswers, TASK);
 }

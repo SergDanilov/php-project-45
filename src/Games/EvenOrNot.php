@@ -14,31 +14,33 @@
 
 namespace Braingames\Games\EvenOrNot;
 
-use function Braingames\Engine\engine_part;
+use function Braingames\Engine\runGameEngine;
 use function cli\line;
 use function cli\prompt;
 
 use const Braingames\Engine\ROUNDS_COUNT;
+use const Braingames\Engine\RANDOM_START_NUM;
+use const Braingames\Engine\RANDOM_END_NUM;
 
 const TASK = 'Answer "yes" if the number is even, otherwise answer "no".';
 
+
+function isEven($item)
+{
+    return $item % 2 === 0;
+}
+
 function runBrainEven()
 {
-    //greeting
-    line('Welcome to the Brain Games!');
-    $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
-
     //main part game
-    line(TASK);
-    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
-        $number = rand(1, 100);
-        line('Question: ' . $number);
-        $answer = prompt("Your answer");
-        ($number % 2 === 0) ? $correctAnswer = 'yes' : $correctAnswer = 'no';
+    $questions = [];
+    $correctAnswers = [];
 
-        engine_part($name, $answer, $correctAnswer);
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
+        $questions[$i] = rand(RANDOM_START_NUM, RANDOM_END_NUM);
+        foreach ($questions as $item) {
+            isEven($item) ? $correctAnswers[$i] = 'yes' : $correctAnswers[$i] = 'no';
+        }
     }
-    //winner
-    line("Congratulations, {$name}!");
+    runGameEngine($questions, $correctAnswers, TASK);
 }
