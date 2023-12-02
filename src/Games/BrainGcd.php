@@ -37,14 +37,14 @@ function runBrainGcd()
         $questions[$i] = "{$numberOne} {$numberTwo}";
 
         $minNum = min($numberOne, $numberTwo);
-        $arrDivisor = [];
+        $divisors = [];
         for ($j = 1; $j <= $minNum; $j++) {
             if (($numberOne % $j === 0) && ($numberTwo % $j === 0)) {
-                $arrDivisor[$j] = $j;
+                $divisors[$j] = $j;
             }
         }
 
-        $correctAnswers[$i] = max($arrDivisor);
+        $correctAnswers[$i] = max($divisors);
     }
     runGameEngine($questions, $correctAnswers, TASK);
 }
