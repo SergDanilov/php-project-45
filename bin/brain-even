@@ -2,7 +2,7 @@
 
 <?php 
 
-#Проверка числа на четность
+# Checking a number for even parity
 
 use function Braingames\Games\EvenOrNot\runBrainEven;
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env php
+
 <?php 
 
 /*
@@ -6,7 +7,7 @@ Activate the game brain-progression in the brainProgression file.
 The games goal is answer what part of arithmetic progression was missed. 
 */
 
-use function Braingames\Games\brainProgression\runBrainProgression;
+use function Braingames\Games\BrainProgression\runBrainProgression;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';

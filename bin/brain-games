@@ -2,7 +2,7 @@
 
 <?php 
 
-#Запуск приветствия для игры, предварительная настройка
+# Starting the game, greeting, pre-setting
 
 use function Braingames\Wellcome\runWellcome;
 
