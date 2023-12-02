@@ -20,15 +20,33 @@ use function cli\line;
 use function cli\prompt;
 
 const ROUNDS_COUNT = 3;
+const RANDOM_START_NUM = 1;
+const RANDOM_END_NUM = 100;
 
-function engine_part(string $name, mixed $answer, mixed $correctAnswer)
+function runGameEngine(array $questions, mixed $correctAnswers, string $task)
 {
-    if ($answer == $correctAnswer) {
-        line('Correct!');
-    } else {
-        line("'{$answer}' is wrong answer ;(.");
-        line("Correct answer was '{$correctAnswer}'.");
-        line("Let's try again, {$name}!");
-        exit;
+    //greeting
+    line('Welcome to the Brain Games!');
+    $name = prompt('May I have your name?');
+    line("Hello, %s!", $name);
+    // game task
+    line();
+    line($task);
+    line();
+    // questions
+    for ($k = 0; $k < ROUNDS_COUNT; $k++) {
+        line("Question: " . $questions[$k]);
+        $answer = prompt("Your answer");
+        if ($answer == $correctAnswers[$k]) {
+            line('Correct!');
+        } else {
+            // loser
+            line("'{$answer}' is wrong answer ;(.");
+            line("Correct answer was '{$correctAnswers[$k]}'.");
+            line("Let's try again, {$name}!");
+            return;
+        }
     }
+    // winner
+    line("Congratulations, {$name}!");
 }
