@@ -26,13 +26,16 @@ const TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function isPrime(int $item)
 {
+    if ($item < 2) {
+        return false;
+    }
     $checkArray = [];
     for ($k = 2; $k < $item; $k++) {
         if (($item % $k) === 0) {
             $checkArray[] = $k;
         }
     }
-    return ((count($checkArray) === 0) && ($item !== 1));
+    return (count($checkArray) === 0);
 }
 
 function runBrainPrime()
@@ -44,7 +47,7 @@ function runBrainPrime()
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $questions[$i] = rand(RANDOM_START_NUM, RANDOM_END_NUM);
         foreach ($questions as $item) {
-            isPrime($item) ? $correctAnswers[$i] = 'yes' : $correctAnswers[$i] = 'no';
+            $correctAnswers[$i] = isPrime($item) ?  'yes' : 'no';
         }
     }
     runGameEngine($questions, $correctAnswers, TASK);
