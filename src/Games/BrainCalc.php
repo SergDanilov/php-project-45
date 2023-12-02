@@ -48,7 +48,7 @@ function runBrainCalc()
                 $correctAnswers[$i] = $numberOne * $numberTwo;
                 break;
             default:
-                throw new Error("Unknown operator: '${operator}'!");
+                echo "Unknown operator: '{$operator}'!";
         }
         $questions[$i] = "{$numberOne} {$operator} {$numberTwo}";
     }
