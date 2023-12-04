@@ -16,8 +16,6 @@
 namespace Braingames\Games\BrainGcd;
 
 use function Braingames\Engine\runGameEngine;
-use function cli\line;
-use function cli\prompt;
 
 use const Braingames\Engine\ROUNDS_COUNT;
 use const Braingames\Engine\RANDOM_START_NUM;
