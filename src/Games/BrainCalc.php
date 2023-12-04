@@ -16,8 +16,7 @@
 namespace Braingames\Games\BrainCalc;
 
 use function Braingames\Engine\runGameEngine;
-use function cli\line;
-use function cli\prompt;
+use function cli\err;
 
 use const Braingames\Engine\ROUNDS_COUNT;
 use const Braingames\Engine\RANDOM_START_NUM;
@@ -48,7 +47,7 @@ function runBrainCalc()
                 $correctAnswers[$i] = $numberOne * $numberTwo;
                 break;
             default:
-                echo "Unknown operator: '{$operator}'!";
+                err("Unknown operator: '{$operator}'!");
         }
         $questions[$i] = "{$numberOne} {$operator} {$numberTwo}";
     }
