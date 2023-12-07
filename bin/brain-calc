@@ -7,7 +7,7 @@ Computing expression from two randoms operands (numbers)
 and one of the following operators: "+", "-", "*".
 */
 
-use function Braingames\Games\BrainCalc\runBrainCalc;
+use function Braingames\Games\BrainCalc\runBrainExpression;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -17,4 +17,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-runBrainCalc();
+runBrainExpression();

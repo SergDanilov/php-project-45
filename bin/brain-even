@@ -4,7 +4,7 @@
 
 # Checking a number for even parity
 
-use function Braingames\Games\EvenOrNot\runBrainEven;
+use function Braingames\Games\BrainEven\runBrainEven;
 
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
