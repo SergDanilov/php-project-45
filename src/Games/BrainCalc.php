@@ -10,13 +10,12 @@
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
  * @copyright 2023 Sergey Danilov
  * @license   no Licence
- * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainCalc.php
+ * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/BrainCalc.php
  */
 
 namespace Braingames\Games\BrainCalc;
 
 use function Braingames\Engine\runGameEngine;
-use function cli\err;
 
 use const Braingames\Engine\ROUNDS_COUNT;
 use const Braingames\Engine\RANDOM_START_NUM;
@@ -24,7 +23,7 @@ use const Braingames\Engine\RANDOM_END_NUM;
 
 const TASK = "What is the result of the expression?";
 
-function runBrainCalc()
+function runBrainExpression()
 {
     $questions = [];
     $correctAnswers = [];
@@ -47,7 +46,7 @@ function runBrainCalc()
                 $correctAnswers[$i] = $numberOne * $numberTwo;
                 break;
             default:
-                err("Unknown operator: '{$operator}'!");
+                throw new Exception("Unknown operator: '{$operator}'!");
         }
         $questions[$i] = "{$numberOne} {$operator} {$numberTwo}";
     }
