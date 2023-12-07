@@ -10,7 +10,7 @@
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
  * @copyright 2023 Sergey Danilov
  * @license   no Licence
- * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainGcd.php
+ * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/BrainGcd.php
  */
 
 namespace Braingames\Games\BrainGcd;
