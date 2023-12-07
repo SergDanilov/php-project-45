@@ -1,7 +1,7 @@
 <?php
 
 /**
- * The games goal is answer what part of arithmetic progression was missed.
+ * The game's goal is answer what part of arithmetic progression was missed.
  * php version 8.1.24
  *
  * @category  LearnProject
@@ -9,7 +9,7 @@
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
  * @copyright 2023 Sergey Danilov
  * @license   no Licence
- * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainProgression.php
+ * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/BrainProgression.php
  */
 
 namespace Braingames\Games\BrainProgression;
@@ -32,17 +32,17 @@ function runBrainProgression()
         $stepProgression = rand(1, 10);
         $startProgressionIndex = rand(0, 4);
 
-        $arrProgression = [];
+        $progression = [];
         for ($j = $startProgression, $k = $startProgressionIndex; $k < 10; $j = $j + $stepProgression) {
-                $arrProgression[$k] = $j;
+                $progression[$k] = $j;
                 $k = $k + 1;
         }
 
         $missedProgressionIndex = rand(4, 9);
-        $correctAnswers[$i] = $arrProgression[$missedProgressionIndex];
-        $arrProgression[$missedProgressionIndex] = "..";
+        $correctAnswers[$i] = $progression[$missedProgressionIndex];
+        $progression[$missedProgressionIndex] = "..";
 
-        $questions[$i] = implode(" ", $arrProgression);
+        $questions[$i] = implode(" ", $progression);
     }
     runGameEngine($questions, $correctAnswers, TASK);
 }

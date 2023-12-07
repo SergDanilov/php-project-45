@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Game allows user to check random number if it's prime or no.
+ * Game allows user to check random number if it's prime or not.
  * php version 8.1.24
  *
  * @category  LearnProject
@@ -9,7 +9,7 @@
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
  * @copyright 2023 Sergey Danilov
  * @license   no Licence
- * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/brainPrime.php
+ * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Games/BrainPrime.php
  */
 
 namespace Braingames\Games\BrainPrime;
@@ -27,13 +27,13 @@ function isPrime(int $item)
     if ($item < 2) {
         return false;
     }
-    $checkArray = [];
+    $divisors = [];
     for ($k = 2; $k < $item; $k++) {
         if (($item % $k) === 0) {
-            $checkArray[] = $k;
+            $divisors[] = $k;
         }
     }
-    return (count($checkArray) === 0);
+    return (count($divisors) === 0);
 }
 
 function runBrainPrime()
