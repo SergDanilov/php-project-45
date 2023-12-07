@@ -46,7 +46,7 @@ function runBrainExpression()
                 $correctAnswers[$i] = $numberOne * $numberTwo;
                 break;
             default:
-                throw new Exception("Unknown operator: '{$operator}'!");
+                throw new \Exception("Unknown operator: '{$operator}'!");
         }
         $questions[$i] = "{$numberOne} {$operator} {$numberTwo}";
     }
