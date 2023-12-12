@@ -11,7 +11,7 @@
  * @author    Sergey Danilov <danilovserg1985s@gmail.com>
  * @copyright 2023 Sergey Danilov
  * @license   no Licence
- * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/engine.php
+ * @link      https://github.com/SergDanilov/php-project-45/blob/main/src/Engine.php
  */
 
 namespace Braingames\Engine;
