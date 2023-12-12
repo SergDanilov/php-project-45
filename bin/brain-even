@@ -4,7 +4,7 @@
 
 # Checking a number for even parity
 
-use function Braingames\Games\BrainEven\runBrainEven;
+use function Braingames\Games\BrainEven\runGame;
 
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
@@ -15,4 +15,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-runBrainEven();
+runGame();

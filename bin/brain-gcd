@@ -4,7 +4,7 @@
 
 # Computing greatest common divisor by two randoms numbers.
 
-use function Braingames\Games\BrainGcd\runBrainGcd;
+use function Braingames\Games\BrainGcd\runGame;
 
 $autoloadPath1 = __DIR__ . '/../../../autoload.php';
 $autoloadPath2 = __DIR__ . '/../vendor/autoload.php';
@@ -14,4 +14,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-runBrainGcd();
+runGame();
