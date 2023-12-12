@@ -23,7 +23,7 @@ use const Braingames\Engine\RANDOM_END_NUM;
 
 const TASK = 'Find the greatest common divisor of given numbers.';
 
-function runBrainGcd()
+function runGame()
 {
     $questions = [];
     $correctAnswers = [];

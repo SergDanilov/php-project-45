@@ -36,7 +36,7 @@ function isPrime(int $item)
     return (count($divisors) === 0);
 }
 
-function runBrainPrime()
+function runGame()
 {
     $questions = [];
     $correctAnswers = [];

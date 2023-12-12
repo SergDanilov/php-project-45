@@ -22,7 +22,7 @@ use const Braingames\Engine\RANDOM_END_NUM;
 
 const TASK = 'What number is missing in the progression?';
 
-function runBrainProgression()
+function runGame()
 {
     $questions = [];
     $correctAnswers = [];
