@@ -23,7 +23,7 @@ use const Braingames\Engine\RANDOM_END_NUM;
 
 const TASK = "What is the result of the expression?";
 
-function runBrainExpression()
+function runGame()
 {
     $questions = [];
     $correctAnswers = [];
@@ -31,10 +31,11 @@ function runBrainExpression()
     for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $numberOne = rand(RANDOM_START_NUM, RANDOM_END_NUM);
         $numberTwo = rand(RANDOM_START_NUM, RANDOM_END_NUM);
-        $operatorArray = ["+","-","*"];
-        $indexRandom = rand(0, 2);
+        $operators = ["+","-","*"];
+        $countOperators = count($operators);
+        $indexRandom = rand(0, $countOperators - 1);
 
-        $operator = $operatorArray[$indexRandom];
+        $operator = $operators[$indexRandom];
         switch ($operator) {
             case "+":
                 $correctAnswers[$i] = $numberOne + $numberTwo;
